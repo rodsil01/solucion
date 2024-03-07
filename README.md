@@ -25,17 +25,26 @@ La solución consiste en los siguientes servicios:
 ### Clientes
 
 GET http://localhost:8080/clients
+
+
 GET http://localhost:8080/clients/{client_id}
 
 ### Rutas
 
 GET http://localhost:8080/routes
+
+
 GET http://localhost:8080/routes/{route_id}
 
 ### Reservas
 
 GET http://localhost:8080/reservations
+
+
 GET http://localhost:8080/reservations/{reservation_id}
+
+
+
 
 POST http://localhost:8080/reservations
 
