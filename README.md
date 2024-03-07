@@ -2,7 +2,7 @@
 
 ## Consideraciones
 
-- La solución utiliza Docker. La guía mostrada a continuación muestra como iniciar los servicios con docker compose
+- La solución utiliza Docker. La guía mostrada a continuación muestra cómo iniciar los servicios con docker-compose
 - Recomiendo usar Postman para realizar las pruebas
 
 ## Setup
