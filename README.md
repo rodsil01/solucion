@@ -56,5 +56,35 @@ GET http://localhost:8081/baggage/reservations/{reservation_id}
 
 *Se creó un script que initializa las bases de datos utilizadas y agrega valores para facilitar las pruebas*
 
+## Ejemplo de petición de reserva
+
+POST http://localhost:8080/reservations
+
+
+body:
+
+`
+{
+    "routeId": "96de053d-fcfb-4409-8b96-0f7b136e62e0",
+    "clientId": "4bc90533-ec62-45b3-9e43-6f1f79b239f0",
+    "reservationDate": "2020-07-30T18:00:00.000Z",
+    "seats": 2,
+    "state": 23,
+    "baggage": [
+        {
+            "description": "equipaje 1",
+            "weight": "10.5"
+        },
+        {
+            "description": "equipaje 2",
+            "weight": "11.5"
+        },
+        {
+            "description": "equipaje 3",
+            "weight": "12.5"
+        }
+    ]
+}
+`
 
 
