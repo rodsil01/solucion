@@ -63,7 +63,7 @@ POST http://localhost:8080/reservations
 
 body:
 
-`
+```json
 {
     "routeId": "96de053d-fcfb-4409-8b96-0f7b136e62e0",
     "clientId": "4bc90533-ec62-45b3-9e43-6f1f79b239f0",
@@ -85,6 +85,6 @@ body:
         }
     ]
 }
-`
+```
 
 
