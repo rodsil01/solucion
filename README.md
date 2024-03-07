@@ -17,5 +17,35 @@ La solución consiste en los siguientes servicios:
 
 1. MySQL: Base de datos utilizada para la persistencia de datos
 2. RabbitMQ: Servicio de mensajería para la comunicación entre los microservicios
-3. Servicio de Reservas: Servicio encargado de realizar reservas de vuelos
-4. Servicio de Equipajes: Servicio encargado de administrar la información de equipajes de las reservas realizadas
+3. Servicio de Reservas  (localhost:8080): Servicio encargado de realizar reservas de vuelos
+4. Servicio de Equipajes (localhost:8081): Servicio encargado de administrar la información de equipajes de las reservas realizadas
+
+## Enpoints
+
+### Clientes
+
+GET http://localhost:8080/clients
+GET http://localhost:8080/clients/{client_id}
+
+### Rutas
+
+GET http://localhost:8080/routes
+GET http://localhost:8080/routes/{route_id}
+
+### Reservas
+
+GET http://localhost:8080/reservations
+GET http://localhost:8080/reservations/{reservation_id}
+
+POST http://localhost:8080/reservations
+
+### Equipaje
+
+GET http://localhost:8081/baggage/reservations/{reservation_id}
+
+---
+
+*Se creó un script que initializa las bases de datos utilizadas y agrega valores para facilitar las pruebas*
+
+
+
