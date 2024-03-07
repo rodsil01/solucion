@@ -7,7 +7,7 @@
 
 ## Setup
 
-1. `git clone `
+1. `git clone https://github.com/rodsil01/solucion-prueba-tecnica.git`
 2. `cd solucion-prueba-tecnica`
 3. `docker-compose up -d`
 
