@@ -93,7 +93,7 @@ body:
 
 **Clientes:**
 
-'''
+'''text
 **- 12438f8b-c347-4782-a7a1-1b9e5ac0ae44**
 
 **- be924f5a-18c1-4676-ab10-d4c0b0f13cd4**
@@ -107,7 +107,7 @@ body:
 
 **Rutas:**
 
-'''
+'''text
 **- 96de053d-fcfb-4409-8b96-0f7b136e62e0**
 
 **- fff65364-1bed-4307-8bb4-813b2904fc02**
