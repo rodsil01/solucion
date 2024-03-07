@@ -54,8 +54,9 @@ GET http://localhost:8081/baggage/reservations/{reservation_id}
 
 ---
 
-*Se creó un script que initializa las bases de datos utilizadas y agrega valores para facilitar las pruebas*
-*Los servicios pueden demorar unos segundos en inicializar completamente debido a las dependencias con RabbitMQ y MySQL*
+**Se creó un script que initializa las bases de datos utilizadas y agrega valores para facilitar las pruebas**
+
+**Los servicios pueden demorar unos segundos en inicializar completamente debido a las dependencias con RabbitMQ y MySQL**
 
 ## Ejemplo de petición de reserva
 
