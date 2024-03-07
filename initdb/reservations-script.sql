@@ -9,15 +9,6 @@ CREATE TABLE `apuesta_total_reservations`.`clients` (
   `email` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
 
-CREATE TABLE `apuesta_total_reservations`.`reservations` (
-  `id` CHAR(38) NOT NULL,
-  `route_id` CHAR(38) NOT NULL,
-  `client_id` CHAR(38) NOT NULL,
-  `reservation_date` DATETIME NOT NULL,
-  `seats` INT NOT NULL,
-  `state` SMALLINT NOT NULL,
-  PRIMARY KEY (`id`));
-
 CREATE TABLE `apuesta_total_reservations`.`routes` (
   `id` CHAR(38) NOT NULL,
   `source` VARCHAR(255) NOT NULL,
@@ -28,6 +19,16 @@ CREATE TABLE `apuesta_total_reservations`.`routes` (
   `price` DOUBLE NOT NULL,
   PRIMARY KEY (`id`));
 
+CREATE TABLE `apuesta_total_reservations`.`reservations` (
+  `id` CHAR(38) NOT NULL,
+  `route_id` CHAR(38) NOT NULL,
+  `client_id` CHAR(38) NOT NULL,
+  `reservation_date` DATETIME NOT NULL,
+  `seats` INT NOT NULL,
+  `state` SMALLINT NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`route_id`) REFERENCES `routes`(`id`),
+  FOREIGN KEY (`client_id`) REFERENCES `clients`(`id`));
 
 INSERT INTO `apuesta_total_reservations`.`clients` VALUES ('12438f8b-c347-4782-a7a1-1b9e5ac0ae44', 'Cliente 1', 'Apellido 1', 'cliente.apellido.1@gmail.com');
 INSERT INTO `apuesta_total_reservations`.`clients` VALUES ('be924f5a-18c1-4676-ab10-d4c0b0f13cd4', 'Cliente 2', 'Apellido 2', 'cliente.apellido.2@gmail.com');
